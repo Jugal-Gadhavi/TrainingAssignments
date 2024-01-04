@@ -1,3 +1,54 @@
-/* table, th, td {
-    border: 1px solid black;
-  } */
+body{
+  background-color: bisque;
+}
+
+.Heading{
+  width: 100vw;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+  color: wheat;
+  font-style: oblique;
+  letter-spacing: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.decor{
+  height: 1rem;
+  background-color: red;
+  width: 100vw;
+  margin-top: -1.5rem;
+}
+
+h3{
+  background-color: green;
+  color: white;
+  padding: 0.5rem;
+}
+
+table{
+  background-color: rgba(128, 128, 128, 0.482);
+}
+
+.content{
+  margin-left: 5px;
+}
+.warning{
+  display: flex;
+}
+
+.Note{
+  font-weight: bolder;
+  font-variant: small-caps;
+}
+
+textarea{
+  height: 100px;
+}
+
+button{
+  padding: 0.5rem;
+  border-radius: 2px;
+}

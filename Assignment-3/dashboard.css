@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("./quantum screen assets/Quicksand font 1/static/Quicksand-Regular.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./quantum screen assets/Quicksand font 1/static/Quicksand-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  font-family: "Quicksand";
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 7% auto 6%;
+}
+
+.header {
+  width: 99vw;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-image: url("./quantum screen assets/header pattern image.png");
+  background-color: #222222;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.562);
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: auto;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.links {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-evenly;
+  color: #3fd28b;
+  font-weight: bolder;
+  margin-right: 1rem;
+}
+
+.links > a:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.links > a:hover::after {
+  display: flex;
+  flex-direction: row;
+  content: "";
+  color: #ffffff;
+  background-color: white;
+  height: 3px;
+}
+
+.footer {
+  display: flex;
+  background: #e0e1e1;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > img {
+  margin-right: 1.2rem;
+  transform: scale(1.3);
+  padding-bottom: 0.15rem;
+}
+
+.inden {
+  width: 2px;
+  height: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.7rem;
+  background-color: darkgrey;
+  border-radius: 20%;
+}
+
+.bold {
+  font-weight: bold;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 800px);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  background-color: #eeeeee;
+  padding-right: 3rem;
+}
+
+.card {
+  display: flex;
+  width: 95%;
+  border-radius: 1%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: larger;
+  background-color: #ffffff;
+  padding: 1.5rem;
+}
+
+.content {
+  width: inherit;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content > div > img {
+  justify-self: center;
+  align-self: center;
+  margin: 4rem;
+  margin-left: 2.5rem;
+  padding-right: 0.2rem;
+  transform: scale(1.75);
+}
+
+.info{
+  width: 100%;
+}
+
+
+.info > :nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.info > :nth-child(1) > img{
+  transform: scale(1.5);
+}
+
+.cardfooter {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardfooter > img {
+  transform: scale(1.5);
+}
+
+.info > :nth-child(2) {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: medium;
+}
+
+.info > :nth-child(2) > :nth-child(2)::before {
+  content: "";
+  height: 70%;
+  align-self: center;
+  justify-self: center;
+  width: 2px;
+  margin-left: -0.6rem;
+  margin-right: 0.6rem;
+  background-color: grey;
+}
+
+.info > :nth-child(2) > :nth-child(2) {
+  display: flex;
+}
+
+.info > :nth-child(2) > :nth-child(2) > p {
+  margin: 0rem;
+}
+.info > :nth-child(2) > P {
+  margin: 0rem;
+}
+
+.info > :nth-child(2) > :nth-child(2) > :nth-child(2) {
+  margin-left: 0.2rem;
+  color: #1f7a54;
+}
+
+.info :nth-child(3) {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.info :nth-child(3) > p {
+  font-weight: bold;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-right: -0.8rem;
+}
+
+
+.info :nth-child(4){
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: x-large;
+  font-weight: bold;
+  border-bottom: solid #222222 3px;
+}
+
+.info :nth-child(5) > :nth-child(2)::before{
+  content: "";
+  height: 70%;
+  align-self: center;
+  justify-self: center;
+  width: 2px;
+  margin-left: -0.6rem;
+  margin-right: 0.6rem;
+  background-color: grey;
+}
+
+.info :nth-child(5){
+  display: flex;
+  margin-top: 1rem;
+  font-size: large;
+  color: rgba(128, 128, 128, 0.753);
+  font-weight: bold;
+}
+
+.content{
+  padding-bottom: 1rem;
+  border-bottom: solid rgba(22, 22, 22, 0.363) 2px;
+  margin-bottom: 0.5rem;
+}

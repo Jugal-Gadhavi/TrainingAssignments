@@ -15,13 +15,14 @@ body {
   margin: 0px;
   font-family: "Quicksand";
   overflow-x: hidden;
+  background-color: #EEEEEE;
 }
 
 .container {
   display: grid;
   height: 100vh;
   width: 100vw;
-  grid-template-rows: 7% auto 6%;
+  grid-template-rows: 7% auto auto auto 6%;
 }
 
 .header {
@@ -92,6 +93,36 @@ body {
   margin-right: 0.5rem;
 }
 
+.tabs{
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  justify-self: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  background-color: #3fd28b;
+}
+
+.tabs > div{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.tabs > div > h1{
+  font-size: x-large;
+}
+
+
+.tabs > :nth-child(1){
+  border-bottom: 5px solid black;
+}
+
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 800px);
@@ -101,6 +132,7 @@ body {
   padding-left: 3rem;
   background-color: #eeeeee;
   padding-right: 3rem;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -157,6 +189,33 @@ body {
 
 .cardfooter > img {
   transform: scale(1.5);
+}
+
+
+.pagenumber{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid black;
+  justify-self: center;
+  width: 80%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: larger;
+}
+
+.pagenumber :nth-child(2){
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagenumber :nth-child(2) > :nth-child(2){
+  font-size: larger;
+  font-weight: bold;
+  border-bottom: #222222 solid 2px;
 }
 
 .info > :nth-child(2) {

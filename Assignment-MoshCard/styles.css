@@ -1,0 +1,79 @@
+.card{
+    display: flex;
+    height: 138px;
+    width: 457px;
+    border: 1px;
+    border: solid;
+    border-color: greenyellow;
+    margin: 4px;
+    align-items: center;
+}
+
+
+.image{
+    padding: 1px;
+    border: solid 1px;
+    border-color: red;
+    height: 130px;
+    width: 130px;
+    margin: 3px;
+}
+
+.username{
+    display: flex;
+}
+
+.bio{
+    font-size: 20px;
+    color: #000;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+
+.content{
+    padding: 14px;
+    margin: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+img{
+    height: 130px;
+    width: 130px;
+}
+
+.ico{
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    margin-right: 14px;
+    color: grey;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    gap: 24px;
+    color: gray;
+}
+
+.center{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+}

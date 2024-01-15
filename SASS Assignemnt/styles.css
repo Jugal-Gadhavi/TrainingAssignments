@@ -1,0 +1,12 @@
+.test {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 4rem;
+  background-color: azure;
+  color: rgb(47, 108, 158);
+  border-radius: 20px;
+}/*# sourceMappingURL=styles.css.map */

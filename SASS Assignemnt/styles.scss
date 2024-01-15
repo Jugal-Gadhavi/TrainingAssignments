@@ -1,0 +1,21 @@
+
+$primary: rgb(64, 146, 56);
+$secondary: rgb(47, 108, 158);
+
+@mixin myButton{
+    padding: 4rem;
+    background-color: azure;
+    color: $secondary;
+}
+
+
+.test{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    @include myButton();
+    border-radius: 20px;
+}

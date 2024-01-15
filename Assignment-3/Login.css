@@ -106,17 +106,9 @@ body {
 }
 
 .radio > div > input {
-  appearance: none;
+  background: url('./quantum screen assets/icons/radio-button-on.svg');
 }
 
-.radio > div > span {
-  cursor: pointer;
-}
-
-.radio > div > span {
-  display: flex;
-  align-items: center;
-}
 
 .radio > div {
   display: flex;
@@ -221,4 +213,8 @@ button {
 
 .inputs > img {
   margin-top: -2.4rem;
+}
+
+.radio{
+  margin-left: 1rem;
 }

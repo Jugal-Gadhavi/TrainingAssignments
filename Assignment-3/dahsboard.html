@@ -14,46 +14,145 @@
         </div>
 
         <div class="links">
-          <a>DAHSBOARD</a>
-          <a>CONTENT</a>
-          <a>USERS</a>
-          <a>REPORT</a>
-          <a>ADMIN</a>
-          <a><img src="quantum screen assets/icons/alerts.svg" /></a>
+          <div class="collapse links">
+            <a>DAHSBOARD</a>
+            <a>CONTENT</a>
+            <a>USERS</a>
+            <a>REPORT</a>
+            <a>ADMIN</a>
+          </div>
+
+          <div class="notif-dropdown">
+            <a
+              ><img class="notif" src="quantum screen assets/icons/alerts.svg"
+            /></a>
+            <div class="notif-dropdown-content">
+              <div class="notification">
+                <div class="notif-list">
+                  <div class="singular-notif">
+                    <div class="upper-notif-content">
+                      <div>
+                        <div> PA: Wilson Kumar</div>
+                        <img src="https://e7.pngegg.com/pngimages/341/867/png-clipart-white-check-with-green-background-illustration-fingerprint-comcast-circle-symbol-technology-tick-miscellaneous-angle.png" height="20" width="20"/>
+                      </div>
+                      <div>
+                        Guest Lecture on Geometry on 20th September
+                      </div>
+                    </div>
+                    <div class="notif-footer">
+                      <div>
+                        <div>
+                          <img
+                            src="data:image/png;base64,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"
+                            height="15px"
+                            width="10px"
+                          />2 files attached
+                        </div>
+                        <div>15-Sep-2018 at 07:21 pm</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="singular-notif wheat">
+                    <div class="upper-notif-content ">
+                      <div>
+                        <div> PA: Wilson Kumar</div>
+                        <img src="https://e7.pngegg.com/pngimages/341/867/png-clipart-white-check-with-green-background-illustration-fingerprint-comcast-circle-symbol-technology-tick-miscellaneous-angle.png" height="20" width="20"/>
+                      </div>
+                      <div>
+                        Guest Lecture on Geometry on 20th September
+                      </div>
+                    </div>
+                    <div class="notif-footer">
+                      <div>
+                        <div>
+                          <img
+                            src="data:image/png;base64,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"
+                            height="15px"
+                            width="10px"
+                          />2 files attached
+                        </div>
+                        <div>15-Sep-2018 at 07:21 pm</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="singular-notif">
+                    <div class="upper-notif-content">
+                      <div>
+                        <div> PA: Wilson Kumar</div>
+                        <img src="https://e7.pngegg.com/pngimages/341/867/png-clipart-white-check-with-green-background-illustration-fingerprint-comcast-circle-symbol-technology-tick-miscellaneous-angle.png" height="20" width="20"/>
+                      </div>
+                      <div>
+                        Guest Lecture on Geometry on 20th September
+                      </div>
+                    </div>
+                    <div class="notif-footer">
+                      <div>
+                        <div>
+                          <img
+                            src="data:image/png;base64,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"
+                            height="15px"
+                            width="10px"
+                          />2 files attached
+                        </div>
+                        <div>15-Sep-2018 at 07:21 pm</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button>Show All</button>
+                  <button>Create New</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <a><img src="quantum screen assets/icons/announcements.svg" /></a>
           <a
             ><img
               src="quantum screen assets/quantum screen assets/icons/account_circle.svg"
+              ddddd
           /></a>
+          <div class="dropdown">
+            <a class="menu"
+              ><img src="./quantum screen assets/icons/hamburger-menu.svg"
+            /></a>
+            <div class="dropdown-content">
+              <a>DAHSBOARD</a>
+              <a>CONTENT</a>
+              <a>USERS</a>
+              <a>REPORT</a>
+              <a>ADMIN</a>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="tabs">
-        <div>
-          <img src="quantum screen assets/icons/courses.svg">
+        <div class="cursor enabled" onclick="tabChange(tab1)" id="tab1">
+          <img src="quantum screen assets/icons/courses.svg" />
           <h1>4</h1>
           <h1>Courses</h1>
         </div>
-        <div>
-          <img src="quantum screen assets/icons/classes.svg">
+        <div class="cursor" onclick="tabChange(tab2)" id="tab2">
+          <img src="quantum screen assets/icons/classes.svg" />
           <h1>4</h1>
           <h1>Classes</h1>
         </div>
       </div>
 
       <div class="pagenumber">
-        <div>
-          Showing courses 4 of 4
-        </div>
+        <div>Showing courses 4 of 4</div>
         <div>
           <p>Sort by</p>
-          <div>Course Name  <img src="quantum screen assets/icons/arrow-down.svg" ></div>
-          <img src="quantum screen assets/icons/sort.svg">
+          <div>
+            Course Name <img src="quantum screen assets/icons/arrow-down.svg" />
+          </div>
+          <img src="quantum screen assets/icons/sort.svg" />
         </div>
       </div>
 
-      <div class="grid">
-        <div class="card">
+      <div class="grid" id="CardContainer">
+        <!-- <div class="card">
           <div class="content">
             <div>
               <img src="quantum screen assets/images/imageMask-1.svg" />
@@ -90,7 +189,6 @@
               <div>50 Students | 1-Jan-2020 21-Aug-2020</div>
             </div>
           </div>
-          <div class="cardinden"></div>
           <div class="cardfooter">
             <img src="quantum screen assets/icons/preview.svg" />
             <img src="quantum screen assets/icons/manage course.svg" />
@@ -124,7 +222,7 @@
                 Topics
               </div>
               <div>
-                <div style="color: rgba(128, 128, 128, 0.719);">No Classes</div>
+                <div style="color: rgba(128, 128, 128, 0.719)">No Classes</div>
                 <div>
                   <img
                     src="quantum screen assets/icons/arrow-down.svg"
@@ -132,7 +230,6 @@
                   />
                 </div>
               </div>
-             
             </div>
           </div>
           <div class="cardinden"></div>
@@ -205,9 +302,7 @@
                   <p>+2</p>
                 </div>
               </div>
-              <div>
-               
-              </div>
+              <div></div>
               <div>
                 <div>Mr Frank's class A</div>
                 <div>
@@ -227,7 +322,7 @@
             <img src="quantum screen assets/icons/grade submissions.svg" />
             <img src="quantum screen assets/icons/reports.svg" />
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="footer">
@@ -238,5 +333,186 @@
         <p>All rights reserved</p>
       </div>
     </div>
+
+    <script>
+      function tabChange(tab) {
+        console.log;
+        const tab1 = document.getElementById("tab1");
+        tab1.className = "cursor";
+        const tab2 = document.getElementById("tab2");
+        tab2.className = "cursor";
+        tab.classList.add("enabled");
+      }
+
+      const Carddata = [
+        {
+          imageurl: "quantum screen assets/images/imageMask.png",
+          title: "Acceleration",
+          tags: ["physics", "Grade", "maths"],
+          expired: false,
+          op: "Mr Frank's ClassB",
+          student: 50,
+          detail: [4, 18, 24],
+          date: ["21-Jan-2020", "21-Aug-2020"],
+          isimp: true,
+          blur: [false, false, false, false],
+        },
+        {
+          imageurl: "quantum screen assets/images/imageMask-1.png",
+          title: "Displacement, Velocity and Speed",
+          tags: ["physics 2", "Grade", "maths"],
+          expired: false,
+          op: "No Classes",
+          detail: [2, 25, 20],
+          date: [],
+          isimp: true,
+          blur: [false, true, true, false],
+        },
+        {
+          imageurl: "quantum screen assets/images/imageMask-3.png",
+          title:
+            "Introduction to Biology: Micro organisms and how they affec...",
+          tags: ["Biology 2", "Grade 4", "maths"],
+          expired: false,
+          op: "All Classes",
+          student: 300,
+          detail: [5, 16, 22],
+          date: [],
+          isimp: true,
+          blur: [false, true, true, false],
+        },
+        {
+          imageurl: "quantum screen assets/images/imageMask-2.png",
+          title: "Introduction to High School Mathematics",
+          tags: ["Mathematics", "Grade 8", "maths"],
+          expired: true,
+          op: "Mr Frank's Class A",
+          student: 44,
+          detail: [2, 25, 20],
+          date: ["14-Oct-2019", "20-Oct-2020"],
+          isimp: false,
+          blur: [false, false, false, false],
+        },
+      ];
+
+      for (let ele of Carddata) {
+        console.log(ele);
+        const hello = "hello";
+        let cardContainer = document.getElementById("CardContainer");
+
+        const cardDiv = document.createElement("div");
+        cardDiv.className = "card";
+        const infoDiv = document.createElement("div");
+        const contentDiv = document.createElement("div");
+        contentDiv.className = "content";
+        infoDiv.className = "info";
+
+        if (ele.expired) {
+          console.log("expired");
+          const expired = document.createElement("div");
+          expired.className = "expired";
+          expired.innerHTML = "EXPIRED";
+          cardDiv.appendChild(expired);
+        }
+
+        const imageDiv = document.createElement("div");
+        const image = document.createElement("img");
+        image.src = ele.imageurl;
+        imageDiv.appendChild(image);
+        contentDiv.appendChild(imageDiv);
+
+        const titleDiv = document.createElement("div");
+        titleDiv.innerHTML += ele.title;
+        if (ele.isimp) {
+          titleDiv.innerHTML +=
+            '<img src="quantum screen assets/icons/favourite.svg" />';
+        }
+        infoDiv.appendChild(titleDiv);
+
+        const div2 = document.createElement("div");
+        const para1 = document.createElement("p");
+        para1.innerHTML = ele.tags[0];
+        div2.appendChild(para1);
+        const innerParaDiv = document.createElement("div");
+        const innerpara1 = document.createElement("p");
+        const innerpara2 = document.createElement("p");
+        innerpara1.innerHTML = "Grade 7";
+        innerpara2.innerHTML = "+2";
+        innerParaDiv.appendChild(innerpara1);
+        innerParaDiv.appendChild(innerpara2);
+        div2.appendChild(innerParaDiv);
+        infoDiv.appendChild(div2);
+
+        const div3 = document.createElement("div");
+        const div3para1 = document.createElement("p");
+        div3para1.innerHTML = ele.detail[0];
+        const div3para2 = document.createElement("p");
+        div3para2.innerHTML = ele.detail[1];
+        const div3para3 = document.createElement("p");
+        div3para3.innerHTML = ele.detail[2];
+        div3.appendChild(div3para1);
+        div3.innerHTML += "Units";
+        div3.appendChild(div3para2);
+        div3.innerHTML += "Lessons";
+        div3.appendChild(div3para3);
+        div3.innerHTML += "Topics";
+        infoDiv.appendChild(div3);
+
+        const div4 = document.createElement("div");
+        document.createElement("div").innerHTML = ele.op;
+        div4.append((document.createElement("div").innerHTML = ele.op));
+        const arrow = document.createElement("img");
+        arrow.src = "quantum screen assets/icons/arrow-down.svg";
+        div4.appendChild(document.createElement("div").appendChild(arrow));
+        infoDiv.appendChild(div4);
+        if (ele.op == "No Classes") {
+          div4.classList.add("greyscale");
+        }
+
+        const div5 = document.createElement("div");
+        const students = ele.student;
+
+        if (students !== undefined) {
+          div5.innerHTML += students + " students | ";
+        }
+        div5.innerHTML += ele.date;
+        infoDiv.appendChild(div5);
+
+        contentDiv.appendChild(infoDiv);
+        cardDiv.appendChild(contentDiv);
+
+        const footer = document.createElement("div");
+        footer.className = "cardfooter";
+        const footerImg1 = document.createElement("img");
+        const footerImg2 = document.createElement("img");
+        const footerImg3 = document.createElement("img");
+        const footerImg4 = document.createElement("img");
+        footerImg1.src = "quantum screen assets/icons/preview.svg";
+        if (ele.blur[0]) {
+          footerImg1.classList.add("disabled");
+        }
+        footerImg2.src = "quantum screen assets/icons/manage course.svg";
+        if (ele.blur[1]) {
+          footerImg2.classList.add("disabled");
+        }
+        footerImg3.src = "quantum screen assets/icons/grade submissions.svg";
+        if (ele.blur[2]) {
+          footerImg3.classList.add("disabled");
+        }
+        footerImg4.src = "quantum screen assets/icons/reports.svg";
+        if (ele.blur[3]) {
+          footerImg4.classList.add("disabled");
+        }
+
+        footer.appendChild(footerImg1);
+        footer.appendChild(footerImg2);
+        footer.appendChild(footerImg3);
+        footer.appendChild(footerImg4);
+
+        cardDiv.appendChild(footer);
+
+        cardContainer.appendChild(cardDiv);
+      }
+    </script>
   </body>
 </html>
